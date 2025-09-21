@@ -47,17 +47,12 @@
         <section class="mb-12">
             <h3 class="text-2xl font-semibold text-center mb-6">Watch Our Promotional Video</h3>
             <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl">
-                <!-- Using an iframe for an embedded promotional video. While the prompt mentioned a <video> tag, an iframe is the standard and most practical way to embed a hosted video from a service like YouTube. -->
-                <iframe 
-                    width="100%" 
-                    height="auto" 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="TechCon 2024 Promotional Video" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    class="w-full h-full">
-                </iframe>
+                <!-- Using a <video> tag as requested. A valid video source file (.mp4, .webm) is required for this to play. -->
+                <video controls class="w-full h-full object-cover">
+                    <source src="https://example.com/techcon_promo.mp4" type="video/mp4">
+                    <source src="https://example.com/techcon_promo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     </main>
