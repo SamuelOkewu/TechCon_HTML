@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule for TechCon 2024</title>
+    <!-- Load Tailwind CSS from CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Custom table styling for better readability and aesthetics */
+        table {
+            border-collapse: separate;
+            border-spacing: 0 1rem;
+        }
+        th, td {
+            padding: 1.5rem;
+            text-align: left;
+            border: none;
+        }
+        thead th {
+            font-weight: 700;
+            color: #1a202c; /* Dark gray for header text */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background-color: transparent;
+        }
+        tbody tr {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl equivalent */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        tbody tr:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white py-6 px-4 md:px-8 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-4xl font-bold mb-4 md:mb-0 tracking-wide">Schedule for TechCon 2024</h1>
+            
+            <!-- Navigation Menu -->
+            <nav class="w-full md:w-auto" aria-label="Main Navigation">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-blue-200 transition-colors duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition-colors duration-300">About</a></li>
+                    <li><a href="register.html" class="hover:text-blue-200 transition-colors duration-300">Register</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto py-8 px-4 md:px-8">
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-12">
+            <!-- Schedule Table -->
+            <table class="w-full text-left">
+                <caption class="text-2xl font-bold text-blue-900 mb-6">Detailed Schedule of Events for TechCon 2024</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" class="py-4">Time</th>
+                        <th scope="col" class="py-4">Session</th>
+                        <th scope="col" class="py-4">Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Session 1 -->
+                    <tr>
+                        <td class="rounded-l-xl">9:00 AM - 9:45 AM</td>
+                        <td>Opening Keynote: The Future of AI</td>
+                        <td class="rounded-r-xl">Dr. Anya Sharma</td>
+                    </tr>
+                    <!-- Session 2 -->
+                    <tr>
+                        <td class="rounded-l-xl">10:00 AM - 10:45 AM</td>
+                        <td>Sustainable Tech for a Better Tomorrow</td>
+                        <td class="rounded-r-xl">Carlos Rivera</td>
+                    </tr>
+                    <!-- Session 3 -->
+                    <tr>
+                        <td class="rounded-l-xl">11:00 AM - 11:45 AM</td>
+                        <td>Panel Discussion: Cybersecurity in a Connected World</td>
+                        <td class="rounded-r-xl">Various Panelists</td>
+                    </tr>
+                    <!-- Lunch Break -->
+                    <tr>
+                        <td class="rounded-l-xl">12:00 PM - 1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td class="rounded-r-xl"></td>
+                    </tr>
+                    <!-- Session 4 -->
+                    <tr>
+                        <td class="rounded-l-xl">1:15 PM - 2:00 PM</td>
+                        <td>Workshop: Building Your First Web3 App</td>
+                        <td class="rounded-r-xl">Sarah Chen</td>
+                    </tr>
+                    <!-- Session 5 -->
+                    <tr>
+                        <td class="rounded-l-xl">2:15 PM - 3:00 PM</td>
+                        <td>Closing Keynote: Tech Innovation for Social Good</td>
+                        <td class="rounded-r-xl">Marcus Lee</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-6 px-4 md:px-8 mt-auto shadow-inner">
+        <p>&copy; copyright 2024 TechCon. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
