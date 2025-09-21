@@ -3,61 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Conference 2025</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TechCon 2024 - Home</title>
     <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            transition: color 0.3s;
+        }
+        
+        a:hover, a:focus {
+            color: #004d99;
+            text-decoration: underline;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #0072ff);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Navigation styles */
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            margin: 0 1.5rem;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            color: #1a2a6c;
+            border-radius: 4px;
+        }
+        
+        nav a:hover, nav a:focus {
+            background-color: #f0f5ff;
+            text-decoration: none;
+        }
+        
+        /* Main content styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .intro-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2.5rem;
+        }
+        
+        h2 {
+            color: #1a2a6c;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .intro-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        /* Video styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 2rem;
+            background-color: #000;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #1a2a6c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                margin: 0.5rem 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .intro-section {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
-<body class="bg-gray-100">
-
+<body>
     <!-- Header Section -->
-    <header class="bg-blue-800 text-white shadow-lg">
-        <div class="container mx-auto p-4 flex flex-col md:flex-row items-center justify-between">
-            <h1 class="text-3xl font-bold mb-4 md:mb-0">The Future of Tech 2025</h1>
-            <nav>
-                <ul class="flex space-x-4 md:space-x-6 text-lg">
-                    <li><a href="about.html" class="hover:underline hover:text-blue-200 transition-colors duration-200">About</a></li>
-                    <li><a href="schedule.html" class="hover:underline hover:text-blue-200 transition-colors duration-200">Schedule</a></li>
-                    <li><a href="register.html" class="hover:underline hover:text-blue-200 transition-colors duration-200">Register</a></li>
-                    <li><a href="contact.html" class="hover:underline hover:text-blue-200 transition-colors duration-200">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>TechCon 2024</h1>
+        <p>Where Innovation Meets Opportunity</p>
     </header>
-
-    <!-- Main Section -->
-    <main class="container mx-auto mt-8 p-4 md:p-8">
-        <section class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">Welcome to The Future of Tech 2025</h2>
-            <p class="text-gray-700 leading-relaxed mb-6">
-                Join us for an incredible three-day event where we explore the groundbreaking innovations and transformative technologies shaping our world. From artificial intelligence and quantum computing to sustainable energy solutions, this conference is your gateway to the next era of technology. Connect with industry leaders, participate in hands-on workshops, and gain insights that will drive the future.
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="nav-container">
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="intro-section" aria-labelledby="conference-heading">
+            <h2 id="conference-heading">Welcome to TechCon 2024</h2>
+            <p>
+                Join us for the premier technology conference of the year! TechCon 2024 brings together 
+                industry leaders, innovators, and technology enthusiasts from around the globe. Discover 
+                cutting-edge technologies, network with professionals, and gain insights that will shape 
+                the future of tech.
+            </p>
+            <p>
+                This year's conference features keynote presentations from top industry experts, 
+                hands-on workshops, panel discussions, and exclusive networking events. Whether you're 
+                a developer, designer, entrepreneur, or tech enthusiast, TechCon 2024 has something 
+                valuable for you.
             </p>
             
-            <div class="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden shadow-2xl">
-                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls class="w-full h-full object-cover">
+            <!-- Promotional Video -->
+            <div class="video-container">
+                <video controls aria-label="TechCon 2024 promotional video">
+                    <source src="techcon-promo.mp4" type="video/mp4">
+                    <track src="techcon-captions.vtt" kind="subtitles" srclang="en" label="English">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </section>
     </main>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-gray-300 py-6 mt-8">
-        <div class="container mx-auto text-center">
-            <p class="text-sm">&copy; copyright 2025 The Future of Tech. All rights reserved.</p>
-        </div>
-    </footer>
-
-        <!-- Paragraph Section -->
     
-            <p class="text-sm">&copy; copyright 2025 The Future of Tech. All rights reserved.</p>
-        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Copyright 2024 TechCon Conference. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
